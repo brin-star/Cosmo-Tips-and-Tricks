@@ -14,7 +14,7 @@ firewall-cmd --permanent --add-port=53/udp
 # Remove default services
 firewall-cmd --permanent --remove-service=dhcpv6-client
 firewall-cmd --permanent --remove-service=ssh
-firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="192.168.1.0/24" service name="ssh" accept'
+firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="192.168.14.0/24" service name="ssh" accept'
 
 firewall-cmd --reload
 firewall-cmd --list-all
